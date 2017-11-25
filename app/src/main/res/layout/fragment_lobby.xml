@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context="com.outofbounds85.spotifyapiattempt.LobbyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/linearLayoutFragLobbyTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@android:drawable/btn_dialog"
+            android:layout_marginTop="10dp"
+            android:id="@+id/imageViewLobbyMe"
+            android:background="@drawable/circleimageview"/>
+        <TextView
+            android:text="My name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/twFragLobbyMe"
+            android:textSize="30sp"
+            android:textColor="@color/colorWhite"
+            android:layout_toRightOf="@id/imageViewLobbyMe"
+            android:gravity="right"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="@string/vs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/twFragLobbyVs"
+        android:textSize="30sp"
+        android:textColor="@color/colorWhite"
+        android:textAlignment="center"/>
+
+    <RelativeLayout
+        android:id="@+id/linearLayoutFragLobbyMiddle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:text="His name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/twFragLobbyRival"
+            android:textSize="30sp"
+            android:textColor="@color/colorWhite"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@android:drawable/btn_dialog"
+            android:layout_marginTop="10dp"
+            android:id="@+id/imageViewLobbyRival"
+            android:background="@drawable/circleimageview"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:text="@string/start"
+        android:layout_width="@dimen/mainActButtonSize"
+        android:layout_height="40dp"
+        android:id="@+id/btnFragLobbyStart"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttonshape"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

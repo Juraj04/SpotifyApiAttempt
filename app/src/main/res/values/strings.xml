@@ -9,4 +9,6 @@
     <string name="btnEnter">Enter</string>
     <string name="or">or</string>
     <string name="btnScan">Scan QR</string>
+    <string name="vs">vs</string>
+    <string name="start">Start</string>
 </resources>
