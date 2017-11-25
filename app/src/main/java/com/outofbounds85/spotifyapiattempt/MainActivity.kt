@@ -26,5 +26,12 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("value", JOIN_FRAGMENT)
             startActivity(intent)
         }
+
+        /*val transaction = supportFragmentManager.beginTransaction()
+
+
+        transaction.replace(R.id.ffrrggmmnntt, LoadingFragment())
+        transaction.addToBackStack(null)
+        transaction.commit()*/
     }
 }

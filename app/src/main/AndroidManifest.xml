@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ConnectingActivity" />
-        <activity android:name=".CompetitionActivity"></activity>
+        <activity android:name=".CompetitionActivity" />
+        <activity android:name=".ResultActivity"></activity>
     </application>
 
 </manifest>
